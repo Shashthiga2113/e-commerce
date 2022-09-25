@@ -1,0 +1,486 @@
+<html>
+<head>
+<title>veg</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+img {
+  border-radius: 50%;
+}
+body{
+background-image:url('https://previews.123rf.com/images/wangshuangpaul/wangshuangpaul1711/wangshuangpaul171100071/89744742-white-brick-wall-texture-elegant-with-high-resolution-of-white-brick-texture-for-background-wallpape.jpg');
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: none;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+form {
+  border: 3px solid #f1f1f1;
+  font-family: Arial;
+}
+
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+nav {
+  float: right;
+  width: 270px;
+  height: 2600px; /* only for demonstration, should be removed */
+  background: powderblue;
+  padding: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+<a href="veg.html">VEG</a>
+  <a href="nonveg.html">NON VEG</a>
+  <a href="desserts.html">DESSERTS</a>
+  
+</div>
+<div class="header">
+<p style="font-family:forte;">
+<marquee><b><h1 style="background-color:;"><u>VEG FOODS</u></h1></b></marquee></p>
+<hr>
+<h2 style="text-align:right;">Join with us</h2>
+<hr>
+</div>
+
+<h1><p style="color:red">ZOMATO</p></h1>
+<h2>Discover the best food</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('TIFFON')"> TIFFON</button>
+  <button class="btn" onclick="filterSelection('VARITIES')"> VARITIES</button>
+  <button class="btn" onclick="filterSelection('RICE')"> RICE</button>
+</div>
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section>
+  <nav>
+Cities We Deliver To
+
+<li>Delhi</li> <li>Kolkata</li><li>Mumbai</li><li>Bengaluru</li><li>Pune</li><li>Hyderabad</li><li>
+Chennai</li><li>Lucknow</li><li>Kochi</li><li>Jaipur</li><li>Ahmedabad</li><li>Chandigarh</li><li>
+Goa</li><li>Indore</li><li>Nashik</li><li>Ooty</li><li>Shimla</li><li>Ludhiana</li><li>Guwahati</li><li>Amritsar</li><li>
+Kanpur</li><li>Allahabad</li><li>Aurangabad</li><li>Bhopal</li><li>Ranchi</li>
+<li>Visakhapatnam</li><li>
+Bhubaneswar</li><li>Coimbatore</li><li>Mangalore</li><li>Vadodara</li>
+<li>Nagpur</li><li>Agra</li><li>
+Dehradun</li><li>Mysore</li><li>Puducherry</li><li>Surat</li><li>Varanasi</li><li>Patna</li><li>Udaipur</li><li>
+Cuttack</li><li>Trivandrum</li><li>Haridwar</li><li>Leh</li><li>Pushkar</li><li>
+Rajkot</li><li>Madurai</li><li>Kozhikode</li><li>Alappuzha</li><li>Thrissur</li><li>
+Manipal</li><li>
+Vijayawada</li><li>Jodhpur</li><li>Kota</li><li>Ajmer</li><li>Mussoorie</li><li>
+Rishikesh</li><li>Jalandhar</li><li>Jammu</li><li>Manali</li><li>Dharamshala</li><li>
+Raipur</li><li>Gorakhpur</li><li>Palakkad</li>
+  <h4>Popular localities in and around Coimbatore</h4>
+<li>RS Puram (361 places)</li>
+<li>Peelamedu (500 places)</li>
+<li>Race Course (124 places)</li>
+<li>Saibaba Colony (266 places)</li>
+<li>Gandhipuram (276 places)</li>
+<li>Town Hall (133 places)</li>
+<li>Ramanathapuram (191 places)</li>
+<li>Kalapatti (67 places)</li>
+<li>Ganapathy (198 places)</li>
+<li>Thudiyalur (126 places)</li>
+<li>Lakshmi Mills (65 places)</li>
+<li>Vadavalli (173 places)</li>
+<li>Nehru Stadium (37 places)</li>
+<li>Singanallur (163 places)</li>
+<li>Chinniayam palayam (21 places)</li>
+<li>Neelambur (44 places)</li>
+<li>Kavundampalayam (101 places)</li>
+<li>Sitra (81 places)</li>
+<li>Ukkadam (148 places)</li>
+<li>Ondipudur (83 places)</li>
+<li>Podanur (201 places)</li>
+<li>Sivanadha Colony (34 places)</li>
+<p>Explore other options for you here
+
+<h4>Popular cuisines near me</h4>
+
+<li>BBQ food near me</li><li>Bakery food near me</li><li>Beverages food near me</li><li>
+Biryani food near me</li><li>Burger food near me</li><li>Chettinad food near me</li><li>
+Chinese food near me</li><li>Desserts food near me</li><li>Ice Cream food near me</li><li>
+Juices food near me</li><li>Lebanese food near me</li><li>Mithai food near me</li><li>
+Mughlai food near me</li><li>North Indian food near me</li><li>Pizza food near me</li><li>
+Sandwich food near me</li><li>Seafood food near me</li><li>Shake food near me</li><li>
+South Indian food near me</li><li>Street food near me</li>
+<img src="https://b.zmtcdn.com/data/homepage_dish_data/4/7cf2db5ec261a0fa27a502d3196a6f60.png" height="240" width="260">
+<img src="https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png"height="240" width="260"></p>
+  </nav>
+
+
+</section>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column TIFFON">
+    <div class="content">
+     <img src="https://b.zmtcdn.com/data/pictures/chains/7/3000247/1fcd96c72347a207b9de6621b3e11cba_featured_v2.jpg?output-format=webp" height="300" width="300">
+      <h4>ROAST</h4>
+      <p>RS 45</p>
+    </div>
+  </div>
+  <div class="column TIFFON">
+    <div class="content">
+  <img src="https://5.imimg.com/data5/EF/VO/GLADMIN-51829047/tiffin-services-for-veg-food-500x500.png" height="300" width="300">
+      <h4>MINI TIFFON</h4>
+      <p>RS 100</p>
+    </div>
+  </div>
+  <div class="column TIFFON">
+    <div class="content">
+    <img src="https://b.zmtcdn.com/data/pictures/5/3000935/074a8a9c9577171db70d26c673fb3674_featured_v2.jpg?output-format=webp" height="300" width="300">
+      <h4>IDLY VADA</h4>
+      <p>RS 30</p>
+    </div>
+  </div>
+    <div class="column TIFFON">
+    <div class="content">
+    <img src="https://b.zmtcdn.com/data/pictures/1/3000011/aa3ad51a246be4d9b1c2da07c7e4a286_featured_v2.jpg" height="300" width="300">
+      <h4>BOORI</h4>
+      <p>RS 50</p>
+    </div>
+  </div>
+  <div class="column TIFFON">
+    <div class="content">
+    <img src="https://b.zmtcdn.com/data/pictures/chains/2/3000112/678ba69e2d665cba13e51b52da2a7910_featured_v2.jpg?output-format=webp" height="300" width="300">
+      <h4>WHEAT DOSA</h4>
+      <p>RS 30</p>
+    </div>
+  </div>
+  <div class="column TIFFON">
+    <div class="content">
+    <img src="https://b.zmtcdn.com/data/pictures/1/19335631/9a3a4f24f3486396ef590bdd2fe412ab_featured_v2.jpg" height="300" width="300">
+      <h4>IDLY SAMBAR</h4>
+      <p>RS 15</p>
+    </div>
+  </div>
+  <div class="column VARITIES">
+    <div class="content">
+      <img src="https://b.zmtcdn.com/data/pictures/chains/5/18166645/ac48d2dc931114539a2d219d02b964c5_featured_v2.jpg" height="300" width="300">
+      <h4>LEMON JUICE</h4>
+      <p>RS 15</p>
+    </div>
+  </div>
+  <div class="column VARITIES">
+    <div class="content">
+    <img src="https://b.zmtcdn.com/data/pictures/9/19367589/9bc814173aecfb39114e162d3ef3a7d0_featured_v2.jpg"  height="300" width="300">
+      <h4>KUSKA</h4>
+      <p>RS 30</p>
+    </div>
+  </div>
+  <div class="column VARITIES">
+    <div class="content">
+    <img src="https://b.zmtcdn.com/data/pictures/9/19564569/8f756e74b991f60bafd6ce0d6b9784f7_featured_v2.jpg" height="300" width="300">
+      <h4>AAPAM</h4>
+      <p>RS 30</p>
+    </div>
+  </div>
+ <div class="column VARITIES">
+    <div class="content">
+    <img src="https://b.zmtcdn.com/data/pictures/5/3002765/b563787d2dcbc48f8b12eca865a66b20_featured_v2.jpg" height="300" width="300">
+      <h4>VEG-BURGER</h4>
+      <p></p>
+    </div>
+  </div>
+
+ <div class="column VARITIES">
+    <div class="content">
+    <img src="https://b.zmtcdn.com/data/pictures/5/3002515/f35097a017661601e9d0c8071bbfe8a1_featured_v2.jpg" height="300" width="300">
+      <h4>CRISPY POTATO</h4>
+      <p>RS 134</p>
+    </div>
+  </div>
+
+ <div class="column VARITIES">
+    <div class="content">
+    <img src="https://b.zmtcdn.com/data/pictures/7/19228317/44cd1d465a6ea39be659605389ad9ac8_featured_v2.jpg" height="300" width="300">
+      <h4>POTATO FRIES</h4>
+      <p>RS 67</p>
+    </div>
+  </div>
+
+
+  <div class="column RICE">
+    <div class="content">
+      <img src="https://b.zmtcdn.com/data/dish_photos/7e9/181a92b339bf29dd6ca9f760d15647e9.jpg" height="300" width="300">
+      <h4>BROTA</h4>
+      <p>RS 58</p>
+    </div>
+  </div>
+  <div class="column RICE">
+    <div class="content">
+    <img src="https://b.zmtcdn.com/data/pictures/0/19162550/0679bbe208fb5895576d146859575c7c_featured_v2.jpg" height="300" width="300">
+      <h4>VEG BRIYANI</h4>
+      <p>RS 56</p>
+    </div>
+  </div>
+  <div class="column RICE">
+    <div class="content">
+    <img src="https://b.zmtcdn.com/data/pictures/4/19645544/203366c3f3ab1d7f086757ade45c05bc_featured_v2.jpg" height="300" width="300">
+      <h4>FRIED RICE</h4>
+      <p>RS 571</p>
+    </div>
+  </div>
+ <div class="column RICE">
+    <div class="content">
+    <img src="https://b.zmtcdn.com/data/pictures/7/19319307/f539558c44611f2a49842a75e84ec68e_featured_v2.jpg" height="300" width="300">
+      <h4>SAMBAR RICE</h4>
+      <p>RS 342</p>
+    </div>
+  </div>
+ <div class="column RICE">
+    <div class="content">
+    <img src="https://b.zmtcdn.com/data/pictures/9/3001869/f44f6c551c9ea312971e80ffa3702737_featured_v2.jpg" height="300" width="300">
+      <h4>PANEER BUTTER MASALA</h4>
+      <p>RS 464</p>
+    </div>
+  </div>
+<div class="column RICE">
+    <div class="content">
+    <img src="https://b.zmtcdn.com/data/pictures/0/19918280/d49d66a4c3d0c5ed98739b266f4f707e_featured_v2.jpg" height="300" width="300">
+      <h4>NON</h4>
+      <p>RS 356</p>
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<form action="/action_page.php">
+  <div class="container">
+    <h2>Subscribe to our Newsletter</h2>
+    <p>Top Restaurant Chains
+
+<li>Burger King</li><li>KFC</li><li>McDonald's</li><li>Pizza Hut</li></p></div>
+
+  <div class="container" style="background-color:white">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+<a href="https://twitter.com/zomato"><img src="data:image/png;base64,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"height="100" width="125"></a>
+<a href="https://www.facebook.com/zomato"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png"height="100" width="125"></a>
+<a href="https://www.instagram.com/accounts/login/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png"height="100" width="125"></a>
+<a href="https://apps.apple.com/in/app/zomato-food-restaurant-finder/id434613896?_branch_match_id=1010121329791682712&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT8pL1ssp0U%2FJL8%2FLyU9M0a3Kz00sydfNzC8GAFKYbuoiAAAA"><img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"></a>
+<a href="https://play.google.com/store/apps/details?id=com.application.zomato&_branch_match_id=1010121329791682712&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT8pL1ssp0U%2FJL8%2FLyU9M0a3STcxLKcrPTAEABp6kzyEAAAA%3D"><img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"></a>
+
+ 
+<footer>
+  <p>@ZOMATO<br>
+  <a href="https://www.resolver.in/companies/zomato-complaints">Complaints register</a></p>
+<p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato Ltd. All rights reserved.</p></footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
